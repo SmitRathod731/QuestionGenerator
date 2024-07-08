@@ -1,0 +1,37 @@
+<h3>Question Paper Generator</h3>
+
+<div id="root">
+    <label for="Total Mark">Total Mark</label>
+    <input type="number" placeholder="Enter total marks" [(ngModel)]="totalmark">
+
+    <label for="Easy">Easy(%)</label>
+    <input type="number" placeholder="Enter percentage" [(ngModel)]="easy">
+
+    <label for="Medium">Medium(%)</label>
+    <input type="number" placeholder="Enter percentage" [(ngModel)]="medium">
+
+    <label for="Hard">Hard(%)</label>
+    <input type="number" placeholder="Enter percentage" [(ngModel)]="hard">
+     <br><br>
+     <button type="button" class="btn btn-primary" (click)="Generate()">Generate</button>
+</div>
+<br>
+<br>
+<table class="table" *ngIf="error">
+    <thead>
+      <tr>
+        <th  class="table-warning"scope="col">Sr. No</th>
+        <th class="table-warning" scope="col">Question</th>
+        <th class="table-warning" scope="col">Subject</th>
+        <th class="table-warning" scope="col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let obj of questions.questionList,index as i">
+          <th  class="table-info" scope="row">{{i+1}}</th>
+          <td class="table-info">{{obj.question}}</td>
+          <td class="table-info">{{obj.subject}}</td>
+          <td class="table-info">{{obj.marks}}</td>
+        </tr>
+        </tbody>
+</table>
