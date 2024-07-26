@@ -20,26 +20,16 @@ This is a web application built using React.js and Node.js that allows users to 
 
 ## Dataset
 
-This dataset was generated using Mockaroo, a tool for generating realistic sample data for various purposes.
+- This dataset was generated using Mockaroo, a tool for generating realistic sample data for various purposes.
 
-* Parameters
+    ### Parameters
 
-- **Question**: Randomly generated text.
-- **Subject**: Includes subjects such as:
-  - Maths
-  - Physics
-  - History
-  - Literature
-  - Chemistry
-- **Topic**: Randomly generated word.
+- Question: Randomly generated text.
+- Subject: Maths, Physics, History, Literature, Chemistry
+- Topic: Randomly generated word.
+- Difficulty: Easy(1 Marks), Medium(2 Marks), Hard(5 Marks)
 
-* Difficulty Levels
-
-- **Easy**: 1 Mark
-- **Medium**: 2 Marks
-- **Hard**: 5 Marks
-
-* Assumptions
+### Assumptions
 
 - The total marks must be a multiple of 5.
 - The sum of difficulties must equal 100.
