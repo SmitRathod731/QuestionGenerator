@@ -19,16 +19,31 @@ This is a web application built using React.js and Node.js that allows users to 
 * Express.js: A minimal and flexible Node.js web application framework used for handling server-side operations.
 
 ## Dataset
-* Used Mockaroo for generating sample data which is being used in the demo.
 
- Parameters
-  Question: Random generated text
- Subject: Maths, Physics, History, Literature, Chemistry
- Topic: Randomly generated word.
-* Difficulty: Easy(1 Marks), Medium(2 Marks), Hard(5 Marks)
-  Assumption
-  Total marks must be multiple of 5.
-  Sum of difficulty must be 100.
+This dataset was generated using Mockaroo, a tool for generating realistic sample data for various purposes.
+
+## Parameters
+
+- **Question**: Randomly generated text.
+- **Subject**: Includes subjects such as:
+  - Maths
+  - Physics
+  - History
+  - Literature
+  - Chemistry
+- **Topic**: Randomly generated word.
+
+## Difficulty Levels
+
+- **Easy**: 1 Mark
+- **Medium**: 2 Marks
+- **Hard**: 5 Marks
+
+## Assumptions
+
+- The total marks must be a multiple of 5.
+- The sum of difficulties must equal 100.
+
 
 ## Contact :
 If you have any questions, suggestions, or feedback, please feel free to contact Smit Rathod at rathodsmit2003@gmail.com.
